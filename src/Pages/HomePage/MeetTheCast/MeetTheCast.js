@@ -26,20 +26,19 @@ const MeetTheCast = () => {
         <h1>Meet The Cast</h1>
         <button>View All</button>
       </div>
-      <div>{charecter.length}</div>
+      <div className=" w-[95%] mx-auto">
       <Swiper
       // install Swiper modules
       modules={[Navigation, A11y]}
-      spaceBetween={50}
+      spaceBetween={100}
       slidesPerView={5}
       navigation={true}
-      // onSwiper={(swiper) => console.log(swiper)}
-      // onSlideChange={() => console.log('slide change')}
     >
                   {
                     charecter.map(c => <SwiperSlide key={c.id}><Card props={c}></Card></SwiperSlide>)
                 }
       </Swiper>
+      </div>
     </div>
   );
 };

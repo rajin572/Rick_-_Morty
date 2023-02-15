@@ -16,6 +16,7 @@ const Banner = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
+        backdropFilter: "blur(160px)"
       }}
     >
       <Logo />
